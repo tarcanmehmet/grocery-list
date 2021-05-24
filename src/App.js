@@ -36,7 +36,7 @@ function App() {
     setGroceryValue("");
   };
   const deleteItemFromList = (id) => {
-    setList(list.filter((item) => item.id != id));
+    setList(list.filter((item) => item.id !== id));
     setMsg({ danger: true, info: "Item is deleted" });
   };
   const editItemFromList = (id) => {
